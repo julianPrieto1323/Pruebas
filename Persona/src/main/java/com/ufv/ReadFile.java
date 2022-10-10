@@ -28,7 +28,7 @@ public class ReadFile {
                     person.setNombre(persona[0]);
                     person.setApellido(persona[1]);
                     person.setDni(persona[2]);
-//                    person.setSexo(Sexo.sexo.valueOf(persona[3]));
+//                  person.setSexo(Sexo.sexo.valueOf(persona[3]));
 
                     lista.add(person);
                     //use comma as separator

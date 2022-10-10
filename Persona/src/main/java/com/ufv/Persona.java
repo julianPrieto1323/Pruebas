@@ -1,6 +1,6 @@
 package com.ufv;
 
-public class Persona {
+public class Persona{
 
     private String nombre;
     private String apellido;
@@ -12,6 +12,7 @@ public class Persona {
 
     @Override
     public String toString() {
+
         return "Persona{" +
                 "nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
