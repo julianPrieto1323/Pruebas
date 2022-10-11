@@ -18,8 +18,7 @@ public class Persona{
                 ", dni='" + dni + '\'' +
                 ", sexo=" + sexo +
                 ", direccion='" + direccion + '\'' +
-                ", telefono='" + telefono + '\'' +
-                '}';
+                ", telefono='" + telefono + '\'';
     }
 
     public Persona(String nombre, String apellido, String dni, String direccion, String telefono) {

@@ -19,10 +19,10 @@ public class Profesor extends Persona{
     public void setID_Profesor(String ID_Profesor) {
         this.ID_Profesor = ID_Profesor;
     }
-    @Override
+
     public String toString() {
-         super.toString();
-         return ", ID Profesor= " + ID_Profesor + '\n' +
+         String res = super.toString();
+         return res + ", ID Profesor= " + ID_Profesor + '\n' +
                 '}';
     }
 }
