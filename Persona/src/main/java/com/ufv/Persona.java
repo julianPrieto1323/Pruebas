@@ -1,14 +1,14 @@
 package com.ufv;
 
-public class Persona {
+public class Persona{
 
-    private String nombre;
-    private String apellido;
-    private String dni;
-    private Sexo.sexo sexo;
+    protected String nombre;
+    protected String apellido;
+    protected String dni;
+    protected Sexo.sexo sexo;
 
-    private String direccion;
-    private String telefono;
+    protected String direccion;
+    protected String telefono;
 
     @Override
     public String toString() {
@@ -18,14 +18,15 @@ public class Persona {
                 ", dni='" + dni + '\'' +
                 ", sexo=" + sexo +
                 ", direccion='" + direccion + '\'' +
-                ", telefono='" + telefono + '\'' +
-                '}';
+                ", telefono='" + telefono + '\'';
     }
 
-    public Persona(String nombre, String apellido, String dni) {
+    public Persona(String nombre, String apellido, String dni, String direccion, String telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
+        this.direccion = direccion;
+        this.telefono = telefono;
     }
 
     public Persona() {

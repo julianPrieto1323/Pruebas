@@ -17,67 +17,30 @@ public class Main {
         Scanner lectura = new Scanner (System.in);
         Persona person = new Persona();
         Persona person2 = new Persona();
-
+        Profesor profesor = new Profesor();
         person.setNombre("Nacho");
         person.setApellido("Serrano");
         person.setDni("55555555A");
         person.setSexo(Sexo.sexo.v);
 
-        Persona person2 = new Persona();
+//        Persona person2 = new Persona();
         String Nombre;
 
-        System.out.print("Introduzca Nombre: ");
-        person2.setNombre(lectura.next());
 
-        System.out.print("Introduzca apellido: ");
-        person2.setApellido(lectura.next());
-
-        System.out.print("Enter Dni: ");
-        person2.setDni(lectura.next());
-
-//        person2.setSexo(Sexo.sexo.v);
-
-        System.out.print("Enter Address: ");
-        person2.setDireccion(lectura.next());
-
-        System.out.print("Introduzca email: ");
-        person2.setSexo(Sexo.sexo.valueOf(lectura.next()));
-        person2 = person;
-//
-//        Persona person2 = new Persona();
-//        String Nombre;
-//
-//        System.out.print("Introduzca Nombre: ");
-//        person2.setNombre(lectura.next());
-//
-//        System.out.print("Introduzca apellido: ");
-//        person2.setApellido(lectura.next());
-//
-//        System.out.print("Introduzca Dni: ");
-//        person2.setDni(lectura.next());
-//
-//        person2.setSexo(Sexo.sexo.v);
-//
-//        System.out.print("Introduzca Direccion: ");
-//        person2.setDireccion(lectura.next());
-//
-//        System.out.print("Introduzca Teléfono: ");
-//        person2.setTelefono(lectura.next());
-//
-//        System.out.println(person.toString());
-//        System.out.println(person2.toString());
-//        System.out.print("\n-----------------");
-//        System.out.print("SI NACHO LEE ESTO 1 PUNTO MAS PARA TODOS EN EL EXAMEN");
-//        System.out.print("-----------------\n");
-
-
-
-
+        //System.out.println("Lectura fichero");
+        //ArrayList<Persona> miLista = ReadFile.readFile();
+        //System.out.println(miLista.toString());
+        System.out.println("-------------------------");
+        System.out.println("DATOS DEL PROFESOR");
+        profesor.setNombre("EL GRAN NACHO");
+        profesor.setApellido("AL QUE AMAMOS");
+        profesor.setDireccion("NOS VA A APROBAR A TODOS");
+        profesor.setDni("Y NOS VA A PONER MUY BUENA NOTA");
+        profesor.setID_Profesor("10");
+        System.out.println(profesor.toString());
         personas.personaList.add(person);
         personas.personaList.add(person2);
         System.out.println(personas.personaList.toString());
         System.out.println(personas.personaList.size());
-
-        System.out.println("Trying to create new conflicts");
     }
 }
