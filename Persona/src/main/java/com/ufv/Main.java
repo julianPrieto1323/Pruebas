@@ -17,7 +17,7 @@ public class Main {
         Scanner lectura = new Scanner (System.in);
         Persona person = new Persona();
         Persona person2 = new Persona();
-
+        Profesor profesor = new Profesor();
         person.setNombre("Nacho");
         person.setApellido("Serrano");
         person.setDni("55555555A");
@@ -27,17 +27,20 @@ public class Main {
         String Nombre;
 
 
-        System.out.println("Lectura fichero");
-        ArrayList<Persona> miLista = ReadFile.readFile();
-        System.out.println(miLista.toString());
+        //System.out.println("Lectura fichero");
+        //ArrayList<Persona> miLista = ReadFile.readFile();
+        //System.out.println(miLista.toString());
         System.out.println("-------------------------");
-
+        System.out.println("DATOS DEL PROFESOR");
+        profesor.setNombre("EL GRAN NACHO");
+        profesor.setApellido("AL QUE AMAMOS");
+        profesor.setDireccion("NOS VA A APROBAR A TODOS");
+        profesor.setDni("Y NOS VA A PONER MUY BUENA NOTA");
+        profesor.setID_Profesor("10");
+        System.out.println(profesor.toString());
         personas.personaList.add(person);
         personas.personaList.add(person2);
         System.out.println(personas.personaList.toString());
         System.out.println(personas.personaList.size());
-
-        System.out.println("Hola");
-
     }
 }
